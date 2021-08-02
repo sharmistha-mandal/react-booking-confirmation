@@ -9,49 +9,6 @@ const Rating = () => {
   const [error, setError] = useState(false);
   const [submit, setSubmit] = useState(false);
 
-  const ratinglist = [
-    {
-      id: 1,
-      text: "1",
-    },
-    {
-      id: 2,
-      text: "2",
-    },
-    {
-      id: 3,
-      text: "3",
-    },
-    {
-      id: 4,
-      text: "4",
-    },
-    {
-      id: 5,
-      text: "5",
-    },
-    {
-      id: 6,
-      text: "6",
-    },
-    {
-      id: 7,
-      text: "7",
-    },
-    {
-      id: 8,
-      text: "8",
-    },
-    {
-      id: 9,
-      text: "9",
-    },
-    {
-      id: 10,
-      text: "10",
-    },
-  ];
-
   useEffect(() => {
     switch (rating) {
       case 1:
@@ -84,8 +41,7 @@ const Rating = () => {
     if (rating) {
       setError(false);
       setSubmit(true);
-    }
-    else setError(true);
+    } else setError(true);
   };
 
   return (
@@ -95,10 +51,16 @@ const Rating = () => {
           <div className="thanks flex">
             <h2>Thank You</h2>
             <div className="thanks__desc">
-            <p>Your feedback help us to improve!</p>
-            <p>
-              if you need any further feedback, please feel free to <a className="action-link" href="https://help.redletterdays.co.uk/hc/en-us">contact us</a> 
-            </p>
+              <p>Your feedback help us to improve!</p>
+              <p>
+                if you need any further feedback, please feel free to{" "}
+                <a
+                  className="action-link"
+                  href="https://help.redletterdays.co.uk/hc/en-us"
+                >
+                  contact us
+                </a>
+              </p>
             </div>
           </div>
         ) : (
@@ -113,15 +75,16 @@ const Rating = () => {
             <div className="feedback__middle">
               <img className="emoji" src={emoji.img} alt={emoji.alt} />
               <div className="rating-list">
-                {ratinglist.map((item) => (
-                  <RatingList
-                    key={item.id}
-                    text={item.text}
-                    active={rating === item.id}
-                    setRating={setRating}
-                    id={item.id}
-                  />
-                ))}
+                {Array(10)
+                  .fill()
+                  .map((item, index) => (
+                    <RatingList
+                      key={index+1}
+                      active={rating === index+1}
+                      setRating={setRating}
+                      id={index+1}
+                    />
+                  ))}
               </div>
             </div>
             <div className="feedback__bottom">
