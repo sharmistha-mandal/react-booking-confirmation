@@ -21,3 +21,9 @@ You will also see any lint errors in the console.
 ## More Info
 
 This project is using functional components and handling sharing data by passing info down. This project is using useState hooks for state manipulation and useEffect to update component based on its dependency. 
+
+For Hover-based rating, please checkout to branch hover-rating
+
+For creating rating item in one line,please checkout to itemscreation-oneline 
+
+
