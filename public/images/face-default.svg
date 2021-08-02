@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="513px" viewBox="0 0 512 513" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>face-default</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="face-default" fill-rule="nonzero">
+            <circle id="Oval" fill="#D2D2D2" cx="256" cy="256" r="256"></circle>
+            <path d="M407.7,352.8 C382.534223,414.466317 322.553687,454.771432 255.95,454.771432 C189.346313,454.771432 129.365777,414.466317 104.2,352.8 C101.9,347.3 105.7,340.8 111.7,339.6 C206.99933,321.691842 304.80067,321.691842 400.1,339.6 C406.1,340.8 410,347.3 407.7,352.8 L407.7,352.8 Z" id="Path" fill="#3E4347"></path>
+            <path d="M512,256 C512.011849,364.548764 443.564746,461.304103 341.204725,497.432491 C238.844705,533.56088 124.827942,501.20691 56.7,416.7 C158.535044,498.919598 305.987541,491.084479 398.53601,398.53601 C491.084479,305.987541 498.919598,158.535044 416.7,56.7 C474.8,103.7 512,175.5 512,256 Z" id="Path" fill="#C4C4C4"></path>
+            <g id="Group" transform="translate(115.000000, 124.000000)" fill="#FFFFFF">
+                <path d="M0.3,215 C18.5,244.6 75.4,247.8 143.4,247.8 C210.5,247.8 267.6,244.6 286.6,216.2 L285.1,215.6 C191.006694,197.937027 94.4668934,197.733643 0.3,215 L0.3,215 Z" id="Path"></path>
+                <ellipse id="Oval" cx="241.4" cy="81.3" rx="81.1" ry="81"></ellipse>
+            </g>
+            <circle id="Oval" fill="#3E4347" cx="356.4" cy="205.3" r="44.2"></circle>
+            <g id="Group" transform="translate(74.000000, 124.000000)" fill="#FFFFFF">
+                <ellipse id="Oval" transform="translate(301.294833, 64.003774) rotate(-135.000000) translate(-301.294833, -64.003774) " cx="301.294833" cy="64.0037744" rx="12" ry="8.1"></ellipse>
+                <ellipse id="Oval" cx="81.6" cy="81.3" rx="81.1" ry="81"></ellipse>
+            </g>
+            <circle id="Oval" fill="#3E4347" cx="155.6" cy="205.3" r="44.2"></circle>
+            <ellipse id="Oval" fill="#FFFFFF" transform="translate(174.476507, 188.096184) rotate(-135.000000) translate(-174.476507, -188.096184) " cx="174.476507" cy="188.096184" rx="12" ry="8.1"></ellipse>
+        </g>
+    </g>
+</svg>

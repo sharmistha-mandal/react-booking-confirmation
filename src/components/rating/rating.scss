@@ -1,0 +1,91 @@
+@import "../../global.scss";
+
+.rating {
+  margin: 30px auto;
+  @include mobile {
+    margin: 30px 0;
+  }
+
+  &__container {
+    max-width: 750px;
+    @include mobile {
+      min-width: 100vw;
+      padding: 15px;
+    }
+    height: 70vh;
+    background-color: $bgColor;
+
+    .feedback,
+    .thanks {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .thanks {
+      &__desc {
+        text-align: center;
+        padding: 20px;
+        line-height: 22px;
+      }
+    }
+    .feedback {
+      &__top {
+        text-align: center;
+        margin-top: 30px;
+        h2 {
+          margin-bottom: 18px;
+        }
+      }
+      &__middle {
+        text-align: center;
+        margin: 25px auto;
+        .emoji {
+          height: 100px;
+          margin-bottom: 18px;
+        }
+        .rating-list {
+          display: flex;
+          &__item {
+            width: 26px;
+            line-height: 26px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 14px;
+            background-color: $secondaryColor;
+            color: white;
+            cursor: pointer;
+            margin-right: 5px;
+            @include mobile{
+              background-color: $secondaryColor;
+            }
+            &:hover{
+              background-color: $accentColor;
+            }
+          }
+        }
+      }
+      &__bottom {
+        text-align: center;
+        margin-bottom: 30px;
+        height: 60px;
+        .cta-btn {
+          width: 155px;
+          height: 40px;
+          color: white;
+          background-color: $mainColor;
+          border: none;
+          border-radius: 3px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+
+        &-error {
+          color: $mainColor;
+          font-size: 13px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

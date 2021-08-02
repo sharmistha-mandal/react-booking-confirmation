@@ -1,0 +1,40 @@
+@import "../../global.scss";
+
+.hero {
+  position: relative;
+
+  &__titles {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--main {
+      margin-bottom: 30px;
+      line-height: 45px;
+      @include mobile {
+        text-align: center;
+        width: 65%;
+      }
+    }
+
+    &--cta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      width: fit-content;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.75);
+
+      .cta-icon {
+        margin-right: 10px;
+      }
+    }
+  }
+}

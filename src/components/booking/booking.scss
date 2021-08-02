@@ -1,0 +1,51 @@
+@import "../../global.scss";
+
+.booking {
+  margin: 30px auto;
+  line-height: 20px;
+  @include mobile {
+    margin: 30px 15px;
+  }
+
+  &__container {
+    max-width: 750px;
+    @include mobile {
+      width: calc(100vw - 30px);
+    }
+
+    &--message {
+      h2 {
+        padding: 20px 0;
+      }
+      p {
+        b {
+          font-size: 18px;
+          font-weight: 700;
+          color: $darkGray;
+        }
+      }
+    }
+
+    &--message,
+    &--info {
+      p {
+        padding: 10px 0;
+      }
+    }
+
+    &--info {
+      margin-top: 30px;
+      font-size: 13px;
+    }
+
+    &--subtitle {
+      background-color: $bgColor;
+      padding: 18px 10px;
+      margin-top: 30px;
+    }
+
+    &--line {
+      border-bottom: 1px solid rgba(118, 106, 99, 0.2);
+    }
+  }
+}
