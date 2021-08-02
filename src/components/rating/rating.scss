@@ -56,12 +56,12 @@
             color: white;
             cursor: pointer;
             margin-right: 5px;
-            @include mobile{
+           /* @include mobile{
               background-color: $secondaryColor;
             }
             &:hover{
               background-color: $accentColor;
-            }
+            }*/
           }
         }
       }
